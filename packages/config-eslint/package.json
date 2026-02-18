@@ -1,0 +1,45 @@
+{
+  "name": "@n0sfer/config-eslint",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "author": "Petr Khasanov",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint --fix ."
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.2",
+    "typescript": "^5.9.3",
+    "jiti": "^2.6.1"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.0.2",
+    "@eslint/config-helpers": "^0.5.2",
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.0.1",
+    "@stylistic/eslint-plugin": "^5.8.0",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint-plugin-astro": "^1.6.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^5.6.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-solid": "^0.14.5",
+    "globals": "^17.3.0",
+    "typescript-eslint": "^8.56.0"
+  },
+  "access": "public"
+}

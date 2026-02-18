@@ -1,0 +1,19 @@
+/* This is a very long CSS comment that exceeds the 100 character limit for line length detection in the linter configuration we have set */
+
+.container {
+  /* Properties not sorted */
+  z-index: 10;
+  background-color: red;
+  align-items: center;
+  display: flex;
+
+  /* Long property value that exceeds 100 characters */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.5),
+    rgba(0, 0, 255, 0.5),
+    rgba(0, 255, 0, 0.5),
+    rgba(255, 255, 0, 0.5)
+  );
+}
+

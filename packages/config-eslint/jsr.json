@@ -1,0 +1,5 @@
+{
+  "name": "@n0sfer/config-eslint",
+  "version": "0.0.1",
+  "exports": "./dist/index.js"
+}

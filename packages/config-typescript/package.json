@@ -1,0 +1,19 @@
+{
+  "name": "@n0sfer/config-typescript",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./src/base.json",
+  "exports": {
+    "./base": "./src/base.json",
+    "./react": "./src/react.json"
+  },
+  "files": [
+    "src/**/*"
+  ],
+  "license": "MIT",
+  "author": "Petr Khasanov",
+  "scripts": {
+    "build": "echo 'No build required - JSON configs only'"
+  },
+  "access": "public"
+}

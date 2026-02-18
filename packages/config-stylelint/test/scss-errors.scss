@@ -1,0 +1,40 @@
+/* Test: Property ordering - should fail ordering checks */
+.card {
+  /* Positioning (after Layout - WRONG) */
+  z-index: 10;
+  position: relative;
+  
+  /* Layout (should be first) */
+  display: flex;
+  width: 100%;
+  height: 300px;
+  
+  /* Box Model */
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid red;
+  border-radius: 8px;
+  
+  /* Typography (after properties) */
+  font-size: 16px;
+  color: black;
+}
+
+/* Test: No trailing semi-colons (painful) */
+.container {
+  font-size: 16px
+  display: flex
+}
+
+/* Test: Duplicate properties (painful) */
+.text {
+  font-weight: bold;
+  font-weight: 700;
+  color: red;
+  color: blue; /* Duplicate! */
+}
+
+/* Test: Invalid hex color (painful mistake) */
+.invalid {
+  color: #zzz; /* Invalid hex! */
+}

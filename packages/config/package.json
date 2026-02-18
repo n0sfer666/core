@@ -1,0 +1,32 @@
+{
+	"name": "@n0sfer/config",
+	"version": "0.0.1",
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/"
+	],
+	"license": "MIT",
+	"author": "Petr Khasanov",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch"
+	},
+	"dependencies": {
+		"@n0sfer/config-eslint": "*",
+		"@n0sfer/config-stylelint": "*",
+		"@n0sfer/config-typescript": "*"
+	},
+	"access": "public",
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"eslint": "^10.0.2",
+		"jiti": "^2.6.1",
+		"stylelint": "^15.9.0",
+		"typescript": "^5.9.3"
+	}
+}

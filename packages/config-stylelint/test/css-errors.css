@@ -1,0 +1,34 @@
+/* Test: Line length > 100 chars (should warn) */
+.container {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5), rgba(255, 255, 0, 0.5));
+}
+
+/* Test: Invalid hex color (painful mistake) */
+.error {
+  color: #zzz; /* Invalid hex color code */
+}
+
+/* Test: Duplicate properties (painful mistake) */
+.text {
+  font-weight: bold;
+  font-weight: 700; /* Duplicate property - painful! */
+  color: red;
+}
+
+/* Test: Missing vendor prefixes (painful) */
+.button {
+  transition: all 0.3s ease; /* Missing -webkit- prefix! */
+  justify-content: center;
+}
+
+/* Test: Invalid units (painful mistake) */
+.wrong-unit {
+  width: 100px;  /* OK */
+  height: 100;  /* Missing unit type! */
+  margin: 10;    /* Missing unit type! */
+}
+
+/* Test: Incorrect display values (painful) */
+.wrong-display {
+  display: block inline;  /* Invalid! Can't be both! */
+}

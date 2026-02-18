@@ -1,0 +1,12 @@
+node_modules
+dist
+*.log
+.DS_Store
+.env.local
+.env.*.local
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.sisyphus

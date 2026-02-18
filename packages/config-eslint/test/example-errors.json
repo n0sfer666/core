@@ -1,0 +1,6 @@
+{
+  "zebra": "value1",
+  "apple": "value2",
+  "banana": { "color": "yellow", "count": 10 },
+  "date": "very long date that exceeds the one hundred character limit for line length detection in linter configuration"
+}

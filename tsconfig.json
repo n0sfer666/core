@@ -1,0 +1,20 @@
+{
+  "extends": "@n0sfer/config-typescript/base.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mts",
+    "**/*.cts",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.cjs"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/dist/**",
+    "**/node_modules/**",
+    ".changeset/**"
+  ]
+}

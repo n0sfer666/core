@@ -1,0 +1,22 @@
+{
+  "name": "_core",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Petr Khasanov",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:version": "changeset version && node scripts/sync-jsr.mjs",
+    "changeset:publish": "changeset publish",
+    "build": "yarn workspaces run build",
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "typescript": "^5.9.3",
+    "@n0sfer/config": "*"
+  }
+}
