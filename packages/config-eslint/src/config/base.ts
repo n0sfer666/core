@@ -1,4 +1,4 @@
-import type { Linter } from '../types';
+import type { Linter } from '../types/index.ts';
 
 export interface BaseConfigReturnType {
   configs: Linter.Config[]

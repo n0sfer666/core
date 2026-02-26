@@ -1,3 +1,3 @@
-import { getFullEslintConfig } from './dist/index.js';
+import { getFullEslintConfig } from './src/index.ts';
 
 export default getFullEslintConfig();

@@ -1,5 +1,5 @@
 import { getFullReactEslintConfig } from '@n0sfer/config';
 
 export default getFullReactEslintConfig({
-  ignores: ['**/dist/**'],
+  ignores: ['**/dist/**', '**/test/**'],
 });

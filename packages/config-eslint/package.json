@@ -20,6 +20,9 @@
     "typescript": "^5.9.3",
     "jiti": "^2.6.1"
   },
+  "dependencies": {
+    "@n0sfer/config-typescript": "*"
+  },
   "devDependencies": {
     "@eslint/compat": "^2.0.2",
     "@eslint/config-helpers": "^0.5.2",

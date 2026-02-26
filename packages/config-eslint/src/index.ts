@@ -6,13 +6,13 @@ import pluginReact from 'eslint-plugin-react';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-import { a11yConfig } from './config/a11y.js';
-import { astro } from './config/astro.js';
-import { getBase } from './config/base.js';
-import { getSolidjsConfig } from './config/solidjs.js';
-import { getSort } from './config/sort.js';
-import { getStylistic } from './config/stylistic.js';
-import { type Linter } from './types/index.js';
+import { a11yConfig } from './config/a11y.ts';
+import { astro } from './config/astro.ts';
+import { getBase } from './config/base.ts';
+import { getSolidjsConfig } from './config/solidjs.ts';
+import { getSort } from './config/sort.ts';
+import { getStylistic } from './config/stylistic.ts';
+import { type Linter } from './types/index.ts';
 
 const languageOptions: Linter.LanguageOptions = {
   ecmaVersion: 2022,
@@ -34,7 +34,9 @@ interface Params {
   withStylistic?: boolean
 }
 
-export const getEslintConfig = (params = {} as Params) => {
+type TReturn = ReturnType<typeof defineConfig>
+
+export const getEslintConfig = (params = {} as Params): TReturn => {
   const {
     extraFiles = [] as string[],
     extraIgnores = [] as string[],
@@ -116,7 +118,7 @@ interface IArgs {
   withA11y?: boolean
   withCss?: boolean
 }
-export const getFullReactEslintConfig = (args: IArgs = {}) => {
+export const getFullReactEslintConfig = (args: IArgs = {}): TReturn => {
   const { withA11y = true, withCss = true, ...rest } = args;
   const { files, ignores } = rest;
 
