@@ -1,16 +1,6 @@
 {
+  "extends": "@n0sfer/config-typescript/base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "outDir": "./dist",
-    "declaration": true,
-    "declarationMap": true,
-    "types": []
-  },
-  "include": ["index.ts"],
-  "exclude": ["node_modules", "dist"]
+    "module": "nodenext"
+  }
 }
