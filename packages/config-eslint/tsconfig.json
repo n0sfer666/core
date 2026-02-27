@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@n0sfer/config-typescript/base.json",
   "compilerOptions": {
     "module": "nodenext",
