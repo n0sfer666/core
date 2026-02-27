@@ -2,14 +2,16 @@ export interface StylelintConfig {
   extends?: string[]
   overrides?: StylelintOverride[]
   plugins?: string[]
-  rules?: Record<string, any>
+  rules?: Rules
 }
 
 export interface StylelintOverride {
   extends?: string[]
   files: string[]
-  rules?: Record<string, any>
+  rules?: Rules
 }
+
+type Rules = Record<string, (number | Record<string, boolean | string> | string)[] | number | string>;
 
 export function getStylelintConfig(): StylelintConfig {
   return {
