@@ -21,7 +21,8 @@
     "stylelint-scss": "^6.6.0",
     "stylelint-order": "^6.0.4",
     "stylelint-config-recommended-scss": "^17.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "@n0sfer/config-typescript": "*"
   },
   "access": "public"
 }
