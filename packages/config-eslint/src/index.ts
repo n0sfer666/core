@@ -34,7 +34,7 @@ interface Params {
   withStylistic?: boolean
 }
 
-type TReturn = ReturnType<typeof defineConfig>
+type TReturn = ReturnType<typeof defineConfig>;
 
 export const getEslintConfig = (params = {} as Params): TReturn => {
   const {
