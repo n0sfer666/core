@@ -1,0 +1,16 @@
+{
+  "name": "@n0sfer/config-typescript",
+  "version": "0.0.1",
+  "description": "Typescript config collection",
+  "exports": {
+    "./base": "./src/base.json",
+    "./react": "./src/react.json"
+  },
+  "publish": {
+    "include": [
+      "**/*.json",
+      "README.md",
+      "LICENSE"
+    ]
+  }
+}
