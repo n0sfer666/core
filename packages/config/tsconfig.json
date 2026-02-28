@@ -1,6 +1,7 @@
 {
-  "extends": "@n0sfer/config-typescript/base.json",
-  "compilerOptions": {
-    "module": "nodenext"
-  }
+  "extends": "./base.json",
+  "outDir": "./dist",
+  "include": [
+    "./index.ts"
+  ]
 }
