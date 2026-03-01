@@ -9,6 +9,7 @@
     "@eslint/js": "npm:@eslint/js@^10.0.1",
     "@eslint/json": "npm:@eslint/json@^1.0.1",
     "@stylistic/eslint-plugin": "npm:@stylistic/eslint-plugin@^5.8.0",
+    "eslint": "npm:eslint@^9.0.0",
     "eslint-plugin-astro": "npm:eslint-plugin-astro@^1.6.0",
     "eslint-plugin-jsx-a11y": "npm:eslint-plugin-jsx-a11y@^6.10.2",
     "eslint-plugin-perfectionist": "npm:eslint-plugin-perfectionist@^5.6.0",
