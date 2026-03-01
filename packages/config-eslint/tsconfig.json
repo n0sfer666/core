@@ -1,15 +1,16 @@
 {
-  "extends": "@n0sfer/config-typescript/base.json",
+  "extends": "@n0sfer/config-typescript/react",
   "compilerOptions": {
-    "module": "nodenext",
-    "allowImportingTsExtensions": true
+    "outDir": "./dist",
+    "rewriteRelativeImportExtensions": true
   },
   "include": [
     "index.ts",
-    "src/**/*"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "test"
   ]
 }

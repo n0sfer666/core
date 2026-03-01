@@ -1,7 +1,7 @@
 import perfectionist from 'eslint-plugin-perfectionist';
 import sort from 'eslint-plugin-simple-import-sort';
 
-import { Linter } from '../types/index.ts';
+import { Linter } from '../types';
 
 const perfectionistConfigs = [perfectionist.configs['recommended-natural']];
 const sortPlugins = { 'simple-import-sort': sort };

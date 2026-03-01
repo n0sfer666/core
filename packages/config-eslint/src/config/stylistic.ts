@@ -1,6 +1,6 @@
 import stylistic from '@stylistic/eslint-plugin';
 
-import { IReturnValue } from '../types/index.ts';
+import { IReturnValue } from '../types';
 export const getStylistic = (): IReturnValue => ({
   configs: [
     stylistic.configs.recommended,

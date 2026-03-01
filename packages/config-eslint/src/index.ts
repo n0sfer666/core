@@ -1,18 +1,18 @@
+import { defineConfig } from '@eslint/config-helpers';
 import css from '@eslint/css';
 import js from '@eslint/js';
 import json from '@eslint/json';
-import { defineConfig } from 'eslint/config';
 import pluginReact from 'eslint-plugin-react';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-import { a11yConfig } from './config/a11y.ts';
-import { astro } from './config/astro.ts';
-import { getBase } from './config/base.ts';
-import { getSolidjsConfig } from './config/solidjs.ts';
-import { getSort } from './config/sort.ts';
-import { getStylistic } from './config/stylistic.ts';
-import { type Linter } from './types/index.ts';
+import { a11yConfig } from './config/a11y';
+import { astro } from './config/astro';
+import { getBase } from './config/base';
+import { getSolidjsConfig } from './config/solidjs';
+import { getSort } from './config/sort';
+import { getStylistic } from './config/stylistic';
+import { type Linter } from './types/index';
 
 const languageOptions: Linter.LanguageOptions = {
   ecmaVersion: 2022,
@@ -69,7 +69,7 @@ export const getEslintConfig = (params = {} as Params): TReturn => {
   }
 
   if (withReact) {
-    config.push(pluginReact.configs.flat.recommended);
+    config.push(pluginReact.configs.flat.recommended as unknown as Linter.Config[]);
   }
 
   if (withCss) {

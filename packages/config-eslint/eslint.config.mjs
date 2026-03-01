@@ -1,3 +1,3 @@
-import { getFullEslintConfig } from './src/index.ts';
+import { getFullEslintConfig } from './src';
 
 export default getFullEslintConfig();
