@@ -1,6 +1,8 @@
 {
   "extends": "./base.json",
-  "outDir": "./dist",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
   "include": [
     "./index.ts"
   ]
