@@ -24,5 +24,7 @@
   "scripts": {
     "build": "echo 'No build required - JSON configs only'"
   },
-  "access": "public"
+  "publishConfig": {
+    "access": "public"
+  }
 }

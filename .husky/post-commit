@@ -1,17 +1,16 @@
-#!/usr/bin/env sh
+#!/bin/env sh
 
-# Post-commit hook: Auto-run changeset version + publish when changesets exist
-# CRITICAL: Uses --no-verify to prevent infinite loops
+# Post-commit hook: Auto-run changeset version when changesets exist
+# Publishing should be done via GitHub Actions to use proper npm authentication
 
 # Check for changeset files (excluding README.md)
 changesets=$(ls .changeset/*.md 2>/dev/null | grep -v README || true)
 
 if [ -z "$changesets" ]; then
-  echo "No changesets found, skipping publish"
   exit 0
 fi
 
-echo "Changesets detected, running version and publish..."
+echo "Changesets detected, running version bump..."
 
 # Run changeset version (bumps versions + updates changelogs)
 if ! yarn changeset:version; then
@@ -19,22 +18,10 @@ if ! yarn changeset:version; then
   exit 1
 fi
 
-# Publish to JSR (publishes all packages)
-echo "Publishing to JSR..."
-if ! yarn jsr:publish; then
-  echo "Error: jsr:publish failed"
-  exit 1
-fi
-
 # Stage all changes
-# Changeset version may have modified:
-# - package.json files (version bumps)
-# - CHANGELOG.md files
-# - .changeset/ directory (removed processed changesets)
 git add .
 
 # Commit with --no-verify to prevent infinite loop
-# This is CRITICAL - without --no-verify, this hook would run again
 git commit -m "chore: version packages" --no-verify
 
-echo "Version packages complete!"
+echo "Version bump complete! Publishing will be handled by GitHub Actions."

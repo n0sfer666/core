@@ -9,9 +9,8 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "changeset:version": "changeset version && node scripts/sync-jsr.mjs",
+    "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
-    "jsr:publish": "npx jsr publish --allow-slow-types",
     "build": "yarn workspaces run build",
     "lint": "eslint . --fix",
     "prepare": "husky"

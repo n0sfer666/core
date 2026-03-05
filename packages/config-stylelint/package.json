@@ -28,5 +28,7 @@
     "typescript": "^5.9.3",
     "@n0sfer/config-typescript": "*"
   },
-  "access": "public"
+  "publishConfig": {
+    "access": "public"
+  }
 }

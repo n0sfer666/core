@@ -19,7 +19,6 @@
 		"@n0sfer/config-stylelint": "*",
 		"@n0sfer/config-typescript": "*"
 	},
-	"access": "public",
 	"devDependencies": {
 		"typescript": "^5.9.3"
 	},
@@ -28,5 +27,8 @@
 		"jiti": "^2.6.1",
 		"stylelint": "^15.9.0",
 		"typescript": "^5.9.3"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

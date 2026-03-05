@@ -1,9 +1,0 @@
-{
-  "name": "@n0sfer/config",
-  "version": "0.0.1",
-  "exports": {
-    "./linters": "./index.ts",
-    "./config/base": "./base.json",
-    "./config/react": "./react.json"
-  }
-}
