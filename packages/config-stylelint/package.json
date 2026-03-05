@@ -16,11 +16,15 @@
     "lint": "stylelint \"**/*.{css,scss,sass}\" --fix",
     "lint:check": "stylelint \"**/*.{css,scss,sass}\""
   },
-  "devDependencies": {
-    "stylelint": "^16.12.0",
-    "stylelint-scss": "^6.6.0",
-    "stylelint-order": "^6.0.4",
+  "dependencies": {
     "stylelint-config-recommended-scss": "^17.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.6.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.12.0"
+  },
+  "devDependencies": {
     "typescript": "^5.9.3",
     "@n0sfer/config-typescript": "*"
   },

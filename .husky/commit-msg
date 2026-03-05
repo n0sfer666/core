@@ -10,19 +10,24 @@ if echo "$commit_msg" | grep -q "^Merge"; then
 fi
 
 # Validate commit message format
-# Expected: [@n0sfer/{package}]: {message}
+# Expected: [@n0sfer/{package}]: {message} or [main]: {message}
 # Valid packages: config, config-eslint, config-stylelint, config-typescript
 pattern='^\[@n0sfer/(config|config-eslint|config-stylelint|config-typescript)\]: .+'
+main_pattern='^\[main\]: .+'
 
 if echo "$commit_msg" | grep -qE "$pattern"; then
+  exit 0
+elif echo "$commit_msg" | grep -qE "$main_pattern"; then
   exit 0
 else
   echo "Invalid commit message format!"
   echo ""
-  echo "Expected format: [@n0sfer/{package}]: {message}"
+  echo "Expected format: [@n0sfer/{package}]: {message} or [main]: {message}"
   echo "Valid packages: config, config-eslint, config-stylelint, config-typescript"
   echo ""
-  echo "Example: [@n0sfer/config]: add new feature"
+  echo "Examples:"
+  echo "  [@n0sfer/config]: add new feature"
+  echo "  [main]: update documentation"
   echo ""
   echo "Your message: $commit_msg"
   exit 1

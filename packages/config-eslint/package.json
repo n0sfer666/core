@@ -23,21 +23,13 @@
     "dev": "tsc --watch",
     "lint": "eslint --fix ."
   },
-  "peerDependencies": {
-    "eslint": "^9.0.0",
-    "typescript": "^5.9.3",
-    "jiti": "^2.6.1"
-  },
-  "devDependencies": {
-    "@n0sfer/config-typescript": "^0.0.1",
+  "dependencies": {
     "@eslint/compat": "^2.0.2",
     "@eslint/config-helpers": "^0.5.2",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^1.0.1",
     "@stylistic/eslint-plugin": "^5.8.0",
-    "@types/eslint": "^9.6.1",
-    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -49,6 +41,16 @@
     "eslint-plugin-solid": "^0.14.5",
     "globals": "^17.3.0",
     "typescript-eslint": "^8.56.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.9.3",
+    "jiti": "^2.6.1"
+  },
+  "devDependencies": {
+    "@n0sfer/config-typescript": "^0.0.1",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1"
   },
   "access": "public"
 }
