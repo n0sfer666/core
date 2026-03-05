@@ -19,9 +19,10 @@ if ! yarn changeset:version; then
   exit 1
 fi
 
-# Run changeset publish (publishes to JSR)
-if ! yarn changeset:publish; then
-  echo "Error: changeset:publish failed"
+# Publish to JSR (publishes all packages)
+echo "Publishing to JSR..."
+if ! yarn jsr:publish; then
+  echo "Error: jsr:publish failed"
   exit 1
 fi
 
