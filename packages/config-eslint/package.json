@@ -1,6 +1,6 @@
 {
   "name": "@n0sfer/config-eslint",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "type": "module",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
@@ -10,20 +10,26 @@
   ],
   "license": "MIT",
   "author": "Petr Khasanov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0sfer666/core.git"
+  },
+  "homepage": "https://github.com/n0sfer666/core#readme",
+  "bugs": {
+    "url": "https://github.com/n0sfer666/core/issues"
+  },
   "scripts": {
     "build": "tsc && node scripts/add-js-extensions.mjs",
     "dev": "tsc --watch",
     "lint": "eslint --fix ."
   },
   "peerDependencies": {
-    "eslint": "^10.0.2",
+    "eslint": "^9.0.0",
     "typescript": "^5.9.3",
     "jiti": "^2.6.1"
   },
-  "dependencies": {
-    "@n0sfer/config-typescript": "*"
-  },
   "devDependencies": {
+    "@n0sfer/config-typescript": "^0.0.1",
     "@eslint/compat": "^2.0.2",
     "@eslint/config-helpers": "^0.5.2",
     "@eslint/css": "^0.14.1",

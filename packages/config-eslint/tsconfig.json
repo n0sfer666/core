@@ -2,7 +2,8 @@
   "extends": "@n0sfer/config-typescript/react",
   "compilerOptions": {
     "outDir": "./dist",
-    "rewriteRelativeImportExtensions": true
+    "rewriteRelativeImportExtensions": true,
+    "declaration": true
   },
   "include": [
     "index.ts",
