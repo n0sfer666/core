@@ -5,12 +5,21 @@
   "main": "./src/base.json",
   "exports": {
     "./base": "./src/base.json",
+    "./node": "./src/node.json",
     "./react": "./src/react.json"
   },
   "files": [
     "src/**/*"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0sfer666/core.git"
+  },
+  "homepage": "https://github.com/n0sfer666/core#readme",
+  "bugs": {
+    "url": "https://github.com/n0sfer666/core/issues"
+  },
   "author": "Petr Khasanov",
   "scripts": {
     "build": "echo 'No build required - JSON configs only'"
