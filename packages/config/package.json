@@ -24,7 +24,7 @@
 		"typescript": "^5.9.3"
 	},
 	"peerDependencies": {
-		"eslint": "^10.0.2",
+		"eslint": "^9.0.0",
 		"jiti": "^2.6.1",
 		"stylelint": "^15.9.0",
 		"typescript": "^5.9.3"
