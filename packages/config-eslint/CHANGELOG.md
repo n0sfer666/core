@@ -1,5 +1,11 @@
 # @n0sfer/config-eslint
 
+## 0.1.0
+
+### Minor Changes
+
+- i hope that will work
+
 ## 0.0.7
 
 ### Patch Changes
